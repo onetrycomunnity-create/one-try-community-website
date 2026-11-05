@@ -162,3 +162,77 @@ footer > p, .footer-bottom {
     line-height: 1.9;
   }
 }
+
+
+/* Open membership section */
+.membership .section-heading { margin-bottom: 34px; }
+.member-panel {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 36px;
+  padding: 38px;
+  background: linear-gradient(135deg, #28303a 0%, #171e28 55%, #10151d 100%);
+  border: 1px solid rgba(225, 235, 246, .30);
+  box-shadow: 0 24px 55px rgba(0,0,0,.28);
+  position: relative;
+  overflow: hidden;
+}
+.member-panel::after {
+  content: "OTC";
+  position: absolute;
+  right: -12px;
+  bottom: -82px;
+  font: 900 220px/1 "Barlow Condensed", Impact, sans-serif;
+  letter-spacing: -.08em;
+  color: rgba(255,255,255,.035);
+  pointer-events: none;
+}
+.member-intro, .member-rules, .member-join { position: relative; z-index: 1; }
+.member-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid rgba(255,70,80,.65);
+  color: #ff747b;
+  padding: 9px 12px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .17em;
+}
+.member-badge span {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: #ff424b; box-shadow: 0 0 12px #ff424b;
+}
+.member-intro h3 {
+  font: 800 clamp(38px, 4vw, 55px)/.92 "Barlow Condensed", Impact, sans-serif;
+  margin: 25px 0 15px;
+  letter-spacing: -.02em;
+}
+.member-intro p { color: #d1dae4; font-size: 12px; line-height: 1.9; max-width: 310px; }
+.member-rules { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; }
+.rule-item {
+  display: flex; gap: 13px; padding: 18px 15px;
+  background: rgba(5,9,14,.48);
+  border: 1px solid rgba(220,232,245,.16);
+  min-height: 112px;
+}
+.rule-number { color: #ff626b; font: 700 22px "Barlow Condensed", sans-serif; }
+.rule-item h4 { margin: 2px 0 7px; font-size: 10px; letter-spacing: .09em; color: #fff; }
+.rule-item p { margin: 0; color: #c5d0dc; font-size: 10px; line-height: 1.7; }
+.rule-item code {
+  display: inline-block; margin-top: 8px; padding: 5px 7px;
+  background: rgba(255,65,75,.12); color: #ff8a90;
+  font: 700 10px Manrope, sans-serif; letter-spacing: .04em;
+}
+.member-join { grid-column: 1 / -1; justify-self: start; margin-top: 2px; }
+@media(max-width: 850px) {
+  .member-panel { grid-template-columns: 1fr; gap: 22px; padding: 30px; }
+  .member-intro p { max-width: 520px; }
+}
+@media(max-width: 600px) {
+  .member-panel { padding: 23px 18px; }
+  .member-rules { grid-template-columns: 1fr; gap: 10px; }
+  .rule-item { min-height: auto; padding: 15px 13px; }
+  .member-join { width: 100%; justify-content: space-between; font-size: 8px; }
+  .member-panel::after { font-size: 150px; bottom: -55px; }
+}
