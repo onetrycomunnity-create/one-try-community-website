@@ -20,7 +20,7 @@ Website landing page responsif untuk HP, tablet, laptop, dan PC.
 9. Tunggu proses deployment selesai. Buka alamat GitHub Pages yang ditampilkan.
 
 ## Link yang sudah dipasang
-- Discord: https://discord.gg/brUWP3yXq
+- Discord: https://discord.gg/9DPxnzSRvs
 - TikTok: https://www.tiktok.com/@onetrycommunity
 - Saweria: https://saweria.co/onetrycomunnity
 
