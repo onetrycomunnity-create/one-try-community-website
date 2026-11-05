@@ -6,7 +6,7 @@ Website landing page responsif untuk HP, tablet, laptop, dan PC.
 - `index.html` — halaman utama
 - `styles.css` — desain responsive dark / silver / electric blue
 - `script.js` — menu mobile dan tahun copyright
-- `one-try-community-logo.webp` — logo yang diberikan
+- `one-try-community-logo.webp` — logo resmi merah-silver terbaru dengan copyright
 
 ## Cara upload ke GitHub lewat HP
 1. Buka repository `one-try-community-website`.
@@ -35,3 +35,11 @@ Paket ini belum mengaktifkan login admin. Ini disengaja: autentikasi admin tidak
 ## Copyright
 Footer otomatis menampilkan tahun berjalan:
 `© [tahun] ONE TRY COMMUNITY. ALL RIGHTS RESERVED.`
+
+
+## Persyaratan Open Member
+- Pendaftaran member selalu terbuka.
+- Format nama: `ONETRYxNAMA` (contoh: `ONETRYxJUSTL`).
+- Wajib bergabung ke Discord resmi: https://discord.gg/9DPxnzSRvs
+- Boleh bergabung dengan komunitas lain (double community).
+- Usia minimal 16 tahun untuk ikut mabar.
