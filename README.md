@@ -6,7 +6,7 @@ Website landing page responsif untuk HP, tablet, laptop, dan PC.
 - `index.html` — halaman utama
 - `styles.css` — desain responsive dark / silver / electric blue
 - `script.js` — menu mobile dan tahun copyright
-- `assets/one-try-community-logo.webp` — logo yang diberikan
+- `one-try-community-logo.webp` — logo yang diberikan
 
 ## Cara upload ke GitHub lewat HP
 1. Buka repository `one-try-community-website`.
@@ -25,7 +25,9 @@ Website landing page responsif untuk HP, tablet, laptop, dan PC.
 - Saweria: https://saweria.co/onetrycomunnity
 
 ## Penting sebelum publikasi
-Link experience Roblox sudah dipasang di `index.html`:\n- WEST ZONE: https://www.roblox.com/share?code=2295fd30ef53cf4783ca6fe60ec98a40&type=ExperienceDetails&stamp=1793906881675\n- NEXZONE OBSTACLE: https://www.roblox.com/share?code=90e0343aa292c84090048f407528da16&type=ExperienceDetails&stamp=1793906917031
+Link experience Roblox sudah dipasang di `index.html`:
+- WEST ZONE: https://www.roblox.com/share?code=2295fd30ef53cf4783ca6fe60ec98a40&type=ExperienceDetails&stamp=1793906881675
+- NEXZONE OBSTACLE: https://www.roblox.com/share?code=90e0343aa292c84090048f407528da16&type=ExperienceDetails&stamp=1793906917031
 
 ## Keamanan admin
 Paket ini belum mengaktifkan login admin. Ini disengaja: autentikasi admin tidak aman jika hanya dibuat dengan password yang ditanam di HTML/JavaScript. Untuk dashboard admin sungguhan, hubungkan Supabase Auth, aktifkan Row Level Security (RLS), dan buat policy akses admin di backend. Jangan pernah memasukkan `service_role` key atau password rahasia ke repository publik.
