@@ -56,3 +56,109 @@
     animation: none !important;
   }
 }
+
+
+/* Contrast refresh: clearer copy, brighter panels, and stronger section separation */
+:root {
+  color-scheme: dark;
+}
+body {
+  background: #0d1219;
+  color: #ffffff;
+}
+.topbar {
+  background: rgba(8, 12, 18, .96);
+  border-bottom-color: rgba(210, 225, 242, .20);
+}
+nav, .brand b {
+  color: #d2dbe6;
+}
+.hero-grid {
+  opacity: .25;
+}
+.hero-text,
+.intro-content p,
+.section-heading > p,
+.community-panel > p {
+  color: #d0d9e4;
+}
+.eyebrow, .section-kicker {
+  color: #b7c5d5;
+}
+.hero h1 em,
+.intro h2 span,
+.section-heading h2 span,
+.community h2 span {
+  color: #c3cfdd;
+}
+.hero-note, .scroll-cue, .art-caption {
+  color: #aebccc;
+}
+.section-wrap {
+  border-top-color: rgba(210, 225, 242, .20);
+  background: linear-gradient(180deg, rgba(23, 32, 44, .54), rgba(13, 18, 25, .25));
+}
+.map-card {
+  background: linear-gradient(145deg, #202c3a, #121a24);
+  border-color: rgba(190, 211, 235, .25);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, .22);
+}
+.card-top, .map-info p, .small-note {
+  color: #c1cedc;
+}
+.map-tag {
+  color: #e2eaf3;
+  border-color: #78899d;
+}
+.card-link {
+  border-top-color: rgba(210, 225, 242, .25);
+  color: #f5f8fc;
+}
+.community-panel {
+  background: linear-gradient(115deg, #263548, #121c29 70%);
+  border-color: rgba(190, 211, 235, .30);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, .3);
+}
+footer {
+  background: #070b10;
+  border-top-color: rgba(210, 225, 242, .22);
+}
+footer > p, .footer-bottom {
+  color: #aebccc;
+}
+.button-ghost {
+  border-color: #8b9bad;
+  color: #ffffff;
+}
+.button-ghost:hover {
+  border-color: #ff424b;
+  color: #ff6a70;
+}
+.button-primary {
+  background: linear-gradient(110deg, #ffffff, #d5dce5);
+  color: #10151c;
+}
+.button-primary:hover {
+  background: linear-gradient(110deg, #ff6269, #d8e0e9);
+}
+.live-dot, .note-line {
+  background: #ff3e49;
+}
+.hero h1 span, .hero-note b, .art-caption > span:first-child,
+.card-arrow, .card-link span {
+  color: #ff555e;
+}
+.community-watermark {
+  color: rgba(255,255,255,.07);
+}
+@media (max-width: 600px) {
+  nav {
+    background: #101823;
+    border-bottom-color: rgba(210,225,242,.25);
+  }
+  .hero-text, .intro-content p, .section-heading > p,
+  .community-panel > p {
+    font-size: 13px;
+    line-height: 1.9;
+  }
+}
