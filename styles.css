@@ -281,3 +281,49 @@ footer > p, .footer-bottom {
  .staff-grid{grid-template-columns:1fr;gap:11px}
  .staff-grid .team-card{min-height:125px}
 }
+
+
+/* Team card information order: ROLE -> NAME -> DISCORD ICON + USERNAME */
+.team-card{align-items:flex-start;justify-content:flex-start}
+.team-role{order:1}
+.team-card h3{order:2}
+.team-discord{order:3;position:relative;z-index:2;display:flex;align-items:center;gap:9px;width:100%;margin-top:2px;padding-top:12px;border-top:1px solid rgba(220,232,245,.16);color:#dce5ef;min-width:0}
+.discord-icon{width:19px;height:19px;flex:0 0 19px;color:#8daeff}
+.discord-label{font-size:8px;font-weight:900;letter-spacing:.13em;color:#9eacbc}
+.discord-username{font-size:12px;font-weight:700;letter-spacing:.02em;color:#fff;overflow-wrap:anywhere;min-width:0}
+.team-owner .discord-icon{color:#ff747b}
+.team-coowner .discord-icon{color:#b9c9df}
+@media(max-width:600px){.team-discord{gap:8px;padding-top:10px}.discord-username{font-size:12px}}
+
+/* ONE TRY logo watermark inside every leadership/staff card */
+.team-card::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  right: -8px;
+  bottom: -18px;
+  width: min(76%, 360px);
+  height: 92%;
+  background-image: url("one-try-watermark.webp");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  opacity: .42;
+  pointer-events: none;
+}
+.team-card > * {
+  position: relative;
+  z-index: 1;
+}
+.team-card::before {
+  z-index: 2;
+}
+@media (max-width: 600px) {
+  .team-card::after {
+    width: 78%;
+    height: 88%;
+    right: -7px;
+    bottom: -14px;
+    opacity: .36;
+  }
+}
