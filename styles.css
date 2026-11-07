@@ -236,3 +236,18 @@ footer > p, .footer-bottom {
   .member-join { width: 100%; justify-content: space-between; font-size: 8px; }
   .member-panel::after { font-size: 150px; bottom: -55px; }
 }
+
+/* Leadership and staff cards */
+.team-group{margin-top:30px}
+.team-group-title{display:flex;align-items:center;gap:12px;margin-bottom:14px;color:#dce5ef;font-size:10px;font-weight:800;letter-spacing:.2em}
+.team-group-title span{color:#ff626b;font:700 22px "Barlow Condensed",sans-serif}
+.team-card{position:relative;overflow:hidden;padding:25px 26px;background:linear-gradient(145deg,#202c3a,#121a24);border:1px solid rgba(190,211,235,.25);box-shadow:0 18px 45px rgba(0,0,0,.20);transition:transform .25s,border-color .25s}
+.team-card:hover{transform:translateY(-4px);border-color:rgba(255,98,107,.65)}
+.team-card::after{content:"OTC";position:absolute;right:12px;bottom:-34px;color:rgba(255,255,255,.035);font:900 100px/1 "Barlow Condensed",Impact,sans-serif;pointer-events:none}
+.team-role{color:#ff747b;font-size:9px;font-weight:800;letter-spacing:.18em;margin-bottom:13px}
+.team-card h3{position:relative;z-index:1;margin:0 0 13px;color:#fff;font:800 clamp(27px,3vw,36px)/1 "Barlow Condensed",Impact,sans-serif;letter-spacing:.025em}
+.team-card p{position:relative;z-index:1;margin:0;color:#d0d9e4;font-size:11px}
+.team-card p span{color:#9eacbc;font-size:9px;font-weight:800;letter-spacing:.15em;margin-right:9px}
+.staff-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+@media(max-width:850px){.staff-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.team-group{margin-top:24px}.team-card{padding:21px 18px}.staff-grid{grid-template-columns:1fr;gap:10px}.team-card h3{font-size:30px}}
